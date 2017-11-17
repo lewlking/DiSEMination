@@ -54,6 +54,10 @@ __status__     = "Prototype"  # "Prototype", "Development" or "Production"
 __module__     = ""
 
 
+def timestamp():
+    return strftime("%Y-%m-%d %H:%M:%S")
+
+
 def main():
     _ = os.system("clear")
     print("{0} v.{1}\n{2} ({3})\n{4}, {5} <{6}>\n"
@@ -66,8 +70,9 @@ def main():
                   __email__))
 
     input("Nature abhors a vacuum gauge. Press [Enter] to start, Ctrl-C to end.")
-    
+
     mks925 = serial.Serial("/dev/ttyS0", 9600, timeout=0, rtscts=False)
+
     query = {}
     query["pressure-3"] = b"@254PR1?;FF"  # Return pressure as a 3-digit value
     query["pressure-4"] = b"@254PR4?;FF"  # Return pressure as a 4-digit value
@@ -80,24 +85,23 @@ def main():
 
     log = open("vacuum.log", "w")
 
-    entry = "Logging begun at: {0}\n".format(strftime("%Y-%m-%d %H:%M:%S"))
+    entry = "Logging begun at: {0}\n".format(timestamp())
     sys.stdout.write(entry)
     log.write(entry)
 
     while True:
-        timestamp = strftime("%Y-%m-%d %H:%M:%S")
         try:
             mks925.write(query["pressure-4"])
             response = mks925.read(100)
             found = ack["pressure"].match(response)
             if found:
                 torr      = float(found.groups()[0])
-                entry = "{0} {1}\n".format(timestamp, torr)
+                entry = "{0} {1}\n".format(timestamp(), torr)
                 sys.stdout.write(entry)
                 log.write(entry)
             sleep(0.1)
         except KeyboardInterrupt:
-            entry = "Logging finished at: {0}\n".format(timestamp)
+            entry = "Logging finished at: {0}\n".format(timestamp())
             sys.stdout.write(entry)
             log.write(entry)
             log.close()

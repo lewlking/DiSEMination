@@ -13,7 +13,7 @@ This little ditty logs the pressure read from the [MKS Instruments 925
 Micro Pirani(TM) Vacuum
 Transducer](https://www.mksinst.com/product/Product.aspx?ProductID=648)
 ten times per second, both to the screen and to a file named
-**vacuum.log**.
+`vacuum.log`.
 
 Press **`Enter`** to begin logging. Press **`Ctrl-C`** to close the log
 and exit.

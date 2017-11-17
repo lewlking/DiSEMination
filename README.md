@@ -1,4 +1,4 @@
-# Seminal Works
+# SEMinal Works
 
 ![Atomic Force Microscope](afmtipCC2-300px.png)
 

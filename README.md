@@ -5,9 +5,9 @@
 Herein lieth code developed in the service of creating a FLOSS / FLOSH
 Scanning Electron Microscope (SEM).
 
-## _Horror vacui metior_ (Nature Abhors a Vacuum Gauge)
+## _Horror vacui metior_ (Nature abhors a vacuum gauge)
 
-First up: **monitor.py**
+First up: **`monitor.py`**
 
 This little ditty logs the pressure read from the [MKS Instruments 925
 Micro Pirani(TM) Vacuum

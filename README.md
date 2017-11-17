@@ -5,7 +5,7 @@
 Herein lieth code developed in the service of creating a FLOSS / FLOSH
 Scanning Electron Microscope (SEM).
 
-## _Horror vacui metior_ (Nature abhors a vacuum gauge)
+## _Horror METIOR vacuo_ (Nature abhors a vacuum gauge)
 
 First up: **`monitor.py`**
 

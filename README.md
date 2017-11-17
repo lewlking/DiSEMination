@@ -44,6 +44,6 @@ Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
 ----
 
-* GitLab project icon shamelessly acquired from Open Clip Art [Atomic
-  Force Microscope probe tip with laser and
+* SEMinal Works project icon shamelessly acquired from Open Clip Art
+  [Atomic Force Microscope probe tip with laser and
   surface](https://openclipart.org/detail/167486/afm-tip-with-laser-and-surface).

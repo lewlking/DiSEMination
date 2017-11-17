@@ -1,5 +1,7 @@
 # Seminal Works
 
+![Atomic Force Microscope](afmtipCC2-300px.png)
+
 Herein layeth code developed in the service of creating a FLOSS / FLOSH
 Scanning Electron Microscope (SEM).
 
@@ -37,3 +39,9 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
 02110-1301, USA.
+
+----
+
+* GitLab project icon shamelessly acquired from Open Clip Art [Atomic
+  Force Microscope probe tip with laser and
+  surface](https://openclipart.org/detail/167486/afm-tip-with-laser-and-surface).

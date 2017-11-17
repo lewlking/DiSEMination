@@ -2,7 +2,7 @@
 
 ![Atomic Force Microscope](afmtipCC2-300px.png)
 
-Herein layeth code developed in the service of creating a FLOSS / FLOSH
+Herein lieth code developed in the service of creating a FLOSS / FLOSH
 Scanning Electron Microscope (SEM).
 
 ## _Horror vacui metior_ (Nature Abhors a Vacuum Gauge)
@@ -23,7 +23,7 @@ https://www.mksinst.com/product/Product.aspx?ProductID=648
 
 ## Copyright and License
 
-Copyright 2017 Kevin Cole <kevin.cole@novawebcoop.org> 2017.11.17
+Copyright &copy; 2017 Kevin Cole &lt;kjcole@member.fsf.org&gt; 2017.11.17
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

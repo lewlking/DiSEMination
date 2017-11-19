@@ -5,7 +5,7 @@
 #  Copyright 2017 Kevin Cole <kevin.cole@novawebcoop.org> 2017.11.17
 #
 #  Nature Abhors a Vacuum Gauge
-#  (horror vacui metior)
+#  (Horror METIOR vacuo)
 #
 #  This little ditty logs the pressure read from the [MKS Instruments 925 Micro
 #  Pirani(TM) Vacuum Transducer] ten times per second, both to the screen and
@@ -41,7 +41,7 @@ import re
 from   time   import sleep, strftime
 
 
-__appname__    = "horror vacui metior"
+__appname__    = "Horror METIOR vacuo"
 __author__     = "Kevin Cole"
 __copyright__  = "Copyright \N{copyright sign} 2017"
 __agency__     = "HacDC"

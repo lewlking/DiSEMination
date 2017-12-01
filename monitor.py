@@ -89,6 +89,8 @@ def main():
     sys.stdout.write(entry)
     log.write(entry)
 
+    tenths = 0
+
     while True:
         try:
             mks925.write(query["pressure-4"])
@@ -96,9 +98,10 @@ def main():
             found = ack["pressure"].match(response)
             if found:
                 torr      = float(found.groups()[0])
-                entry = "{0} {1}\n".format(timestamp(), torr)
+                entry = "{0:6}\t{1}\n".format(tenths, torr)
                 sys.stdout.write(entry)
                 log.write(entry)
+                tenths += 1
             sleep(0.1)
         except KeyboardInterrupt:
             entry = "Logging finished at: {0}\n".format(timestamp())
